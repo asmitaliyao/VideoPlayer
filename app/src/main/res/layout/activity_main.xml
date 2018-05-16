@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    tools:context=".activity.MainActivity">
+    <!-- 主界面布局 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <!-- 主界面图标 -->
+        <ImageView
+            android:id="@+id/main_activity_image_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/selector_mic" />
+
+        <!-- 主界面文字 -->
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:text="欢迎使用"
+            android:textColor="#333333"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- 主界面文字 -->
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="H.265播放器"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- 主界面按钮 -->
+        <Button
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:id="@+id/main_activity_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/selector_cor"
+            android:textSize="21sp"
+            android:text="开始使用"/>
+    </LinearLayout>
+</RelativeLayout>
